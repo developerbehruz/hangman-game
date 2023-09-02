@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head> 
+<body>
+    <div class="container">
+        <div class="modal">
+            <h1 class="title"></h1>
+            <p class="wonTime"> </p>
+            <p class="wonScore"> </p>
+            <button class="newGame">Play again</button>
+        </div>
+        <div class="wrapper start-wrapper">
+            <div class="div">
+                <h1>Hang Man</h1>
+                <button class="start">Start</button>
+            </div>
+            <div class="names">
+                <h4>Names</h4>
+                <p></p>
+            </div>
+        </div>
+        <div class="wrapper wrapper-game wg">
+            <div class="game-pool">
+                <div class="left">
+                    <div class="time">
+                        <h2 class="timer">0</h2>
+                        <h2 class="score">0</h2>
+                    </div>
+                    <div class="letter" data="A">A</div>
+                    <div class="letter" data="E">E</div>
+                    <div class="letter" data="I">I</div>
+                    <div class="letter" data="O">O</div>
+                    <div class="letter" data="U">U</div>
+                </div>
+                <canvas id="canvas" width="200" height="200"></canvas>
+                <div class="right">
+                    <div class="line1">
+                        <div class="letter" data="B">B</div>
+                        <div class="letter" data="F">F</div>
+                        <div class="letter" data="J">J</div>
+                        <div class="letter" data="M">M</div>
+                        <div class="letter" data="Q">Q</div>
+                        <div class="letter" data="T">T</div>
+                        <div class="letter" data="X">X</div>
+                    </div>
+                    <div class="line2">
+                        <div class="letter" data="C">C</div>
+                        <div class="letter" data="G">G</div>
+                        <div class="letter" data="K">K</div>
+                        <div class="letter" data="N">N</div>
+                        <div class="letter" data="R">R</div>
+                        <div class="letter" data="V">V</div>
+                        <div class="letter" data="Y">Y</div>
+                    </div>
+                    <div class="line3">
+                        <div class="letter" data="D">D</div>
+                        <div class="letter" data="H">H</div>
+                        <div class="letter" data="L">L</div>
+                        <div class="letter" data="P">P</div>
+                        <div class="letter" data="S">S</div>
+                        <div class="letter" data="W">W</div>
+                        <div class="letter" data="Z">Z</div>
+                    </div>
+                </div>
+            </div>
+            <div class="word">
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
